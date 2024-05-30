@@ -1,0 +1,1 @@
+A project where file operations (file upload, file download, file deletion, file listing, file reading, file writing, file creation) can be carried out remotely between different devices connected to different networks with the ZeroMQ library. I used the Ngrok Tool to make my local server accessible from different networked devices with a temporary public URL.
