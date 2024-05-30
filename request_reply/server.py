@@ -2,12 +2,15 @@ import zmq
 import os
 import base64
 
+# Defining the connection address and file upload directory for communication with ZeroMQ
 bind_address = "tcp://0.0.0.0:5555"
 upload_dir = "uploads"
 
+# If the upload file does not exist, create it
 if not os.path.exists(upload_dir):
     os.makedirs(upload_dir)
 
+# ZeroMQ creates context and socket 
 context = zmq.Context()
 socket = context.socket(zmq.REP)
 socket.bind(bind_address)
